@@ -1,8 +1,12 @@
+Here’s the updated summary including **`lagranp.m`** as part of the project:
+
+---
+
 ## Temperature-Density Interpolation (MATLAB Project)
 
 ### Project Summary
 
-This MATLAB script estimates the density of a gas at a target temperature using various **interpolation methods**. It applies **Lagrange interpolation**, **polynomial fitting**, and **cubic spline interpolation** to a set of temperature-density data. The script also demonstrates **extrapolation** and compares results visually.
+This MATLAB project estimates the density of a gas at a target temperature using **interpolation methods**. It applies **Lagrange interpolation** (via a custom `lagranp.m` function), **polynomial fitting**, and **cubic spline interpolation** to temperature-density data. The project also demonstrates **extrapolation** and visually compares results.
 
 ---
 
@@ -19,7 +23,7 @@ This MATLAB script estimates the density of a gas at a target temperature using 
 
 ### Key Methods and Algorithms
 
-* **Lagrange Interpolation:** Computes interpolating polynomials for different degrees to evaluate the target temperature.
+* **Lagrange Interpolation (`lagranp.m`):** Computes polynomial coefficients for different degrees to evaluate the target temperature.
 * **Polynomial Fitting (`polyfit`):** Fits polynomials to scaled data to reduce numerical errors and evaluates at the target.
 * **Cubic Spline Interpolation (`spline`):** Provides smooth interpolation across all data points and allows extrapolation.
 * **Data Scaling:** Standardizes temperature values for polynomial fitting to avoid ill-conditioned matrices.
@@ -39,15 +43,16 @@ This MATLAB script estimates the density of a gas at a target temperature using 
 
 ### File Overview
 
-| File Name                  | Description                                          |
-| -------------------------- | ---------------------------------------------------- |
-| **interpolation_script.m** | MATLAB script performing interpolation and plotting. |
+| File Name                  | Description                                                 |
+| -------------------------- | ----------------------------------------------------------- |
+| **interpolation_script.m** | MATLAB script performing interpolation and plotting.        |
+| **lagranp.m**              | Custom function computing Lagrange polynomial coefficients. |
 
 ---
 
 ### How to Run
 
-1. Open MATLAB and place the script in the working folder.
+1. Open MATLAB and place both `interpolation_script.m` and `lagranp.m` in the working folder.
 2. Run the script:
 
 ```matlab
